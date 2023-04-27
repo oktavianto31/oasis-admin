@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f634388f.css",
+    "main.js": "/static/js/main.f6d2f626.js",
+    "static/js/498.4df704bb.chunk.js": "/static/js/498.4df704bb.chunk.js",
+    "static/js/703.b9cc269f.chunk.js": "/static/js/703.b9cc269f.chunk.js",
+    "static/js/513.a7ea3d8a.chunk.js": "/static/js/513.a7ea3d8a.chunk.js",
+    "static/media/waiter_called_sound.wav": "/static/media/waiter_called_sound.a3dd13b67e8debac2288.wav",
+    "static/media/order_added_sound.wav": "/static/media/order_added_sound.d122a7951df12a4f3e8c.wav",
+    "static/media/waitercall.svg": "/static/media/waitercall.2b3b7d44c6deb9bc1f5e233b1d673716.svg",
+    "index.html": "/index.html",
+    "static/media/RemoveCat.svg": "/static/media/RemoveCat.f0cdaeaee4345dc9fd1579c088a76ba5.svg",
+    "main.f634388f.css.map": "/static/css/main.f634388f.css.map",
+    "main.f6d2f626.js.map": "/static/js/main.f6d2f626.js.map",
+    "498.4df704bb.chunk.js.map": "/static/js/498.4df704bb.chunk.js.map",
+    "703.b9cc269f.chunk.js.map": "/static/js/703.b9cc269f.chunk.js.map",
+    "513.a7ea3d8a.chunk.js.map": "/static/js/513.a7ea3d8a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f634388f.css",
+    "static/js/main.f6d2f626.js"
+  ]
+}

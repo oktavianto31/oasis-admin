@@ -1,0 +1,652 @@
+.tablescontainer {
+  margin-top: 4%;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-bottom: 4%;
+  align-items: center;
+  border-style: solid;
+  border-color: #cacaca;
+  border-width: 0.5px;
+  border-radius: 20px;
+  background-color: #fff;
+  height: auto;
+  position: relative;
+}
+
+.tablesnotification {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  position: absolute;
+  z-index: 3;
+  top: -30px;
+  right: 0px;
+  width: 300px;
+  height: 55px;
+  background-color: #e52c32;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 40px;
+  padding-left: 15px;
+}
+
+/* .tables {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #424242;
+} */
+
+.tablecontainergrid {
+  display: grid;
+  grid-row-gap: 10%;
+  grid-column-gap: 5%;
+  grid-template-columns: repeat(auto-fit, 10rem);
+  margin: 5% 5% 2% 5%;
+  height: 75vh;
+  overflow-y: scroll;
+  padding: 2% 0 0 0;
+  justify-content: center;
+}
+
+.tablecontainergrid::-webkit-scrollbar {
+  display: none;
+}
+
+.innergrid {
+  width: 100%;
+  height: 173px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 0 -10% 0;
+}
+
+.emptytable {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -13%;
+  margin-bottom: 2%;
+}
+
+.deletetablebutton {
+  width: 80px;
+  height: 20px;
+  background-color: transparent;
+  border: 0px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #f10c0c;
+}
+
+.tabledetails {
+  display: flex;
+  flex-direction: column;
+  width: 173px;
+  height: 173px;
+  border: 2px dashed #979797;
+  border-radius: 5px;
+  background-color: #c4c4c4;
+  margin-bottom: 20%;
+}
+
+.tablenumberempty {
+  display: flex;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 29px;
+  line-height: 40px;
+  color: #fff;
+  margin: 5% 0 0 5%;
+}
+
+.center {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.emptycenter {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tableempty {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+}
+
+.tablecustomer {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+}
+
+.tabledetailsactive {
+  width: 173px;
+  height: 173px;
+  border-radius: 5px;
+  margin-bottom: 20%;
+  border: none;
+}
+
+.tablewaiteractive {
+  width: 173px;
+  height: 173px;
+  border-radius: 5px;
+  background-color: #fcd232;
+  margin-bottom: 20%;
+  border: none;
+}
+
+.tablenumberactive {
+  display: flex;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 29px;
+  color: #fcd232;
+  margin: 5% 0 0 5%;
+}
+
+.waitercalltablenumber {
+  display: flex;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 29px;
+  color: #f10c0c;
+  margin: 5% 0 0 5%;
+}
+
+.customerimage {
+  width: 34px;
+  height: 34px;
+}
+
+.waiterimage {
+  width: 60px;
+  height: 60px;
+}
+
+.tablecustomeractive {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+}
+
+.waitercallactive {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 22px;
+  color: #fff;
+}
+
+.customerwaiterimage {
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+}
+
+.null {
+  display: none;
+}
+
+.time {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.waitertime {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #f10c0c;
+}
+.notime {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: transparent;
+}
+.waitertimestart {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.tabletimestart {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.noordermodalbox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 150px;
+  border: none;
+  border-radius: 20px;
+  background-color: #fffaf4;
+}
+
+.noinnermodalbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: auto;
+  height: 60%;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.noordertext {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 50px;
+  color: #424242;
+}
+
+.tablewaitermodalbox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 580px;
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 20px;
+  background-color: #fffaf4;
+}
+
+.duplicatetablemodalbox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 445px;
+  height: 259px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 20px;
+  background-color: #fffaf4;
+}
+
+.duplicateinnerbox {
+  padding: 10% 5% 0 5%;
+}
+.modalclose {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2%;
+  margin-right: 1%;
+}
+.modalclosebutton {
+  background-color: transparent;
+  border: none;
+}
+
+.tablewaitermodaltitle {
+  display: flex;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 50px;
+  color: #f10c0c;
+  margin: 0 0 0 5%;
+}
+
+.duplicatetablemodaltitle {
+  display: flex;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #f10c0c;
+  margin: 0 0 0 5%;
+}
+
+.duplicatetabletext {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #424242;
+  margin: 0 0 2% 5%;
+}
+
+.tableselectorcontainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.8fr 0.5fr 0.8fr;
+  align-items: center;
+  padding: 0 5% 0 5%;
+  box-sizing: border-box;
+}
+
+.modalbuttoncontainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 10%;
+  padding-right: 5%;
+}
+
+.modalcancelbutton {
+  width: 108px;
+  height: 22px;
+  background-color: transparent;
+  border: 0px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #424242;
+}
+
+.modalconfirmbutton {
+  width: 151px;
+  height: 40px;
+  border: 0px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+  background-color: #df3030;
+  border-radius: 5px;
+}
+
+.sideattributes {
+  display: grid;
+  grid-template-columns: 0.5fr 0.05fr 1fr;
+  margin: 2% 0 0 5%;
+}
+
+.sidetexts {
+  display: grid;
+  grid-template-rows: auto auto;
+  row-gap: 20px;
+}
+
+.modaltexts {
+  white-space: nowrap;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  color: #424242;
+}
+
+.boldmodaltexts {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #424242;
+}
+
+.tablewaitercontainer {
+  display: flex;
+  flex-direction: column;
+  margin: 5% 0 0 5%;
+}
+
+.waitertextinput {
+  margin-top: 2%;
+}
+.waiterdetailinput {
+  width: 510px;
+  height: 110px;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: 0px solid;
+  resize: none;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: #424242;
+  outline: none;
+}
+
+.waiterdetailinput::-webkit-scrollbar {
+  display: none;
+}
+
+.waiterbuttoncontainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+.waiterconfirmbutton {
+  white-space: nowrap;
+  width: 310px;
+  height: 50px;
+  border: none;
+  padding: 10px 20px;
+  background-color: #e52c32;
+  border-radius: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  line-height: 33px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.tablebuttoncontainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: end;
+  margin-right: 6%;
+  margin-bottom: 2%;
+}
+
+.addtablecontainer {
+  margin-right: 1%;
+}
+
+.addtableinactive {
+  white-space: nowrap;
+  width: 192px;
+  height: 38px;
+  border: none;
+  margin-right: 5%;
+  background-color: #c4c4c4;
+
+  border-radius: 30px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  color: #fff;
+}
+.addtableactive {
+  white-space: nowrap;
+  width: 192px;
+  height: 38px;
+  border: none;
+  margin-right: 5%;
+
+  background-color: #e52c32;
+  border-radius: 30px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  color: #fff;
+}
+
+.duplicatetablecontainer {
+  margin-right: 1%;
+}
+
+.duplicatetablebuttonactive {
+  white-space: nowrap;
+  width: 145px;
+  height: 38px;
+  border: 1px solid #e52c32;
+  margin-right: 5%;
+
+  background-color: transparent;
+  border-radius: 30px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  color: #e52c32;
+}
+
+.duplicatetablebutton {
+  white-space: nowrap;
+  width: 145px;
+  height: 38px;
+  border: 0px solid;
+  margin-right: 5%;
+
+  background-color: #e52c32;
+  border-radius: 30px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  color: #ffff;
+}
+.removetablecontainer {
+  margin-right: 1%;
+}
+.removetablebuttonactive {
+  white-space: nowrap;
+  width: 145px;
+  height: 38px;
+  border: 1px solid #e52c32;
+  margin-right: 5%;
+  background-color: transparent;
+  border-radius: 30px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  color: #e52c32;
+}
+
+.removetablebutton {
+  white-space: nowrap;
+  width: 145px;
+  height: 38px;
+  margin-right: 5%;
+  border: 0px solid;
+  border-radius: 30px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  color: #fff;
+}
+
+.edittablebutton {
+  white-space: nowrap;
+  width: 145px;
+  height: 38px;
+  border: none;
+  margin-right: 5%;
+  border-radius: 30px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  color: #fff;
+}
+
+.tablepaginationfooter {
+  margin-top: 0%;
+  margin-left: 3%;
+  margin-right: 1%;
+  margin-bottom: 2%;
+  max-width: 100%;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.orderidtext {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #424242;
+}
+
+
+.progressbar{
+  background: #fff !important;
+}
+
+@media (max-width:1000px){
+  .tablecontainergrid{
+    height: 85vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .tablebuttoncontainer {
+    justify-content: center;
+  }
+
+  .tablecontainergrid{
+    height: 90vh;
+  }
+
+}
+
+@media (max-width:600px){
+  .tablecontainergrid{
+    height: 100vh;
+  }
+}
+

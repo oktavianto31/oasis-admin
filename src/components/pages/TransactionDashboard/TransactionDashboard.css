@@ -1,0 +1,295 @@
+.transactiondashboardcontainer {
+  background-color: #fffaf4;
+  position: relative;
+  margin-top: 4%;
+  margin-left: 4%;
+  margin-right: 4%;
+  /* margin-bottom: 4%; */
+  position: relative;
+}
+
+.outertransactiontable::-webkit-scrollbar {
+  display: none;
+}
+
+.transactiondashboardheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.transactiondashboardtitle {
+  font-weight: 700;
+  font-size: 22px;
+}
+.transactiondashboardbutton {
+  display: flex;
+}
+
+.outertransactiontable {
+  position: relative;
+  border-radius: 20px;
+  overflow: scroll;
+  border: 0.5px solid #9b9b9b;
+  margin-top: 30px;
+}
+
+.transactiontable {
+  width: 100%;
+  min-width: 1263px;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.transactionheader {
+  display: flex;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  width: 100%;
+  height: 68px;
+  justify-content: center;
+  align-items: center;
+}
+
+.transactionleft {
+  display: flex;
+  margin-left: 2%;
+}
+
+.transactionright {
+  margin-right: 2%;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buttonright {
+  margin-left: 20px;
+  background-color: transparent;
+  border: 1px solid;
+  border-radius: 30px;
+  padding: 2px 35px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 15px 35px 15px 35px;
+  cursor: pointer;
+}
+
+.buttondate {
+  margin-left: 20px;
+  background-color: transparent;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 2px 35px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 15px 35px 15px 35px;
+}
+
+.transactionheadertitlegrid {
+  display: grid;
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  height: 50px;
+  grid-template-columns: 0.5fr 1.4fr 1.4fr 1.4fr 1.4fr 1.4fr;
+  padding: 0 3%;
+  align-items: center;
+  background-color: #fffaf4;
+  white-space: nowrap;
+}
+
+.transactionheadertitle {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #808080;
+}
+
+.transactionrendercontainer {
+  visibility: visible;
+  width: 100%;
+  height: 620px;
+  overflow-y: hidden;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+.transactionrendercontainer::-webkit-scrollbar {
+  display: none;
+}
+
+.transactionrendergrid {
+  display: grid;
+  justify-content: flex-start;
+  height: 88px;
+  width: 100%;
+  grid-template-columns: 0.5fr 1.4fr 1.4fr 1.4fr 1.4fr 1.4fr;
+  padding: 0 3%;
+  align-items: center;
+}
+
+.chartsummary {
+  /* height: 500px; */
+  /* padding: 20px; */
+  /* background: #000; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ordertotal {
+  background: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #808080;
+  border-radius: 10px;
+}
+
+.ordertotalprice {
+  font-weight: 600;
+}
+
+.transactiontext {
+  display: flex;
+  justify-content: flex-start;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #555570;
+}
+
+.chart {
+  height: 500px;
+}
+
+.transactiontablegraph {
+  background: #fff;
+  display: flex;
+  padding: 2%;
+}
+
+.summarycard {
+  /* border: 0.5px solid #9B9B9B; */
+  border-radius: 6px;
+  padding: 1%;
+  margin-right: 1%;
+
+  cursor: pointer;
+}
+
+.summarycardtitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #7f7f7f;
+}
+
+.summarycardvalue {
+  color: #424242;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.summarycardpercent {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.percenttext {
+  font-weight: 700;
+}
+/* 
+.footer{
+  margin-bottom: 4%;
+  background: #000;
+} */
+
+.chartwrapper {
+  background: #fff;
+  padding: 1%;
+  /* height: 500px; */
+  /* width: 100%; */
+}
+
+.calendarwrap {
+  display: inline-block;
+  position: relative;
+}
+
+.inputbox {
+  margin-left: 20px;
+  background-color: transparent;
+  border: 1px solid;
+  border-radius: 30px;
+  padding: 2px 35px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 15px 35px 15px 35px;
+  cursor: pointer;
+}
+
+.savedatebuttonwrapper {
+  display: flex;
+  justify-content: end;
+  background: #fff;
+  align-items: center;
+}
+
+.savedatebutton {
+  margin-right: 20px;
+  width: 20%;
+  height: 28px;
+  border: 0px solid;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: none;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 22px;
+  color: #fff;
+  background-color: #4cd966;
+}
+
+.calendarelement {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-80%);
+  top: 50px;
+  border: 1px solid #ccc;
+  z-index: 999;
+}
+
+.downloadbutton {
+  margin-left: 20px;
+  background-color: transparent;
+  border: 1px solid;
+  border-radius: 30px;
+  padding: 2px 35px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 15px 35px 15px 35px;
+  cursor: pointer;
+}
+
+@media (max-width: 820px) {
+  .chartsummary {
+    display: flex;
+    flex-direction: column;
+    /* height: 600px; */
+  }
+
+  .outertransactiontable {
+    /* margin-top: 90px; */
+  }
+}

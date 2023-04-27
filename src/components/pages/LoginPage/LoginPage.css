@@ -1,0 +1,282 @@
+.backgroundcontainer {
+  height: 100vh;
+  background-color: #df3030;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.innercontainer {
+  background-color: #fff;
+  width: 740px;
+  height: 560px;
+  border-radius: 30px;
+  margin: auto;
+  display: grid;
+  grid-template-rows: auto;
+  align-content: center;
+  justify-content: center;
+}
+.contractinnercontainer {
+  background-color: #fff;
+  width: 660px;
+  height: 360px;
+  border-radius: 30px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.registerinnercontainer {
+  background-color: #fff;
+  width: 740px;
+  height: auto;
+  border-radius: 30px;
+  padding: 20px 0px;
+  display: grid;
+  grid-template-rows: auto;
+  align-content: center;
+  justify-content: center;
+}
+
+.return {
+  display: flex;
+  align-items: center;
+  align-content: center;
+
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+.contractbackbutton {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+}
+.containertitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #df3030;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  padding: 20px;
+  margin-bottom: 4%;
+}
+
+.containerforms {
+  display: flex;
+  justify-content: center;
+}
+.contracttext {
+  display: flex;
+  justify-content: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  padding: 20px;
+}
+
+.marginedinputform {
+  width: 100%;
+  margin-bottom: 4%;
+}
+
+.passinputform {
+  width: 100%;
+  margin-bottom: 4%;
+}
+
+.label {
+  white-space: nowrap;
+}
+
+.rightlink {
+  text-decoration: none;
+  color: #838fa6;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  display: flex;
+  margin-bottom: 2%;
+  /* background: red; */
+  /* justify-content: end; */
+  /* margin-top: 2%; */
+  /* margin-right: 2%; */
+  /* flex: 0.5; */
+}
+
+.buttongroup {
+  margin-top: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginbutton {
+  background-color: #df3030;
+  border: none;
+  border-radius: 12px;
+  height: 70px;
+  width: 280px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  color: #fff;
+}
+
+.resetbutton {
+  background-color: #df3030;
+  border: none;
+  border-radius: 12px;
+  height: 60px;
+  width: 200px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.middlerow {
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #838fa6;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.link {
+  text-decoration: none;
+  color: #e52c32;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+.linkbutton {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+.containertext {
+  color: #838fa6;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.emailtext {
+  color: #e52c32;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.ordermodalboxtof {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 550px;
+  /* display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr; */
+  /* display: flex;
+  flex-direction: column; */
+  border: none;
+  border-radius: 20px;
+  background-color: #fffaf4;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.innermodalboxtof {
+  margin-right: 5%;
+  margin-left: 5%;
+  width: auto;
+  height: auto;
+
+}
+
+@media only screen and (max-width: 650px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .formcontainer {
+    width: 56%;
+  }
+
+  .innercontainer {
+    background-color: #fff;
+    width: 95%;
+    height: 70%;
+    border-radius: 30px;
+    margin: auto;
+    display: grid;
+    grid-template-rows: auto;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .containertitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #df3030;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 20px;
+    margin-bottom: 4%;
+  }
+
+  .loginbutton {
+    background-color: #df3030;
+    border: none;
+    border-radius: 12px;
+    height: 50px;
+    width: 280px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .inputform {
+    width: 560px;
+    height: 60px;
+    color: #838fa6;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    background-color: #f2f6fc;
+    border-radius: 30px;
+    border: none;
+    padding: 0px 20px;
+  }
+}

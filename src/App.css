@@ -1,0 +1,103 @@
+.box {
+  display: flex;
+}
+
+.column {
+  height: 100%;
+  min-width: 356px;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  overflow-y: hidden;
+}
+
+.column2 {
+  /* background-color: #424242; */
+  background-color: #fffaf4;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.input {
+  display: block;
+  /* visibility: hidden; */
+  -webkit-appearance: none;
+  background: transparent;
+  border: none;
+  position: absolute;
+  z-index: 101;
+  height: 24px;
+  top: 10px;
+  left: 15px;
+  width: 24px;
+  cursor: pointer;
+}
+
+.toggle {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  top: 10px;
+  left: 15px;
+  z-index: 100;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.toggle .common {
+  position: absolute;
+  height: 2px;
+  width: 14px;
+  background-color: #ff4b74;
+  border-radius: 50px;
+  transition: 0.3s ease;
+}
+
+.toggle .top_line {
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.toggle .middle_line {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.toggle .bottom_line {
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* input:checked ~ .toggle .top_line {
+  left: 2px;
+  top: 11px;
+  width: 19px;
+  transform: rotate(45deg);
+}
+
+input:checked ~ .toggle .bottom_line {
+  left: 2px;
+  top: 11px;
+  width: 19px;
+  transform: rotate(-45deg);
+}
+input:checked ~ .toggle .middle_line {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+input:checked ~ .column {
+  display: block;
+} */
+
+@media (max-width: 768px) {
+  .column {
+    width: 30%;
+    min-width: 100%;
+  }
+}

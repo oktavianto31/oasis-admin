@@ -1,0 +1,53 @@
+.inputformcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.othersinputform {
+  width: auto;
+  height: auto;
+  color: #1f1f1f;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+}
+
+.passinputformcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  position: relative;
+}
+.passicon {
+  position: absolute;
+  right: 5%;
+}
+
+input:focus {
+  border: transparent;
+  outline: none !important;
+}
+
+.is-invalid {
+  background-color: #f7bdbd;
+  color: #df3030;
+}
+
+.error {
+  display: flex;
+  justify-content: start;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: #df3030;
+  margin-left: 2%;
+}

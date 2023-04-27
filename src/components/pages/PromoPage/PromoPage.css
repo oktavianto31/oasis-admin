@@ -1,0 +1,522 @@
+.promocontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 55px 4% 0% 4%;
+  position: relative;
+  overflow: hidden;
+}
+
+.promonotification {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  position: absolute;
+  z-index: 3;
+  top: 5px;
+  right: 4%;
+  width: 227px;
+  height: 49px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 15px;
+}
+
+.form {
+  width: 100%;
+  align-items: center;
+  height: 700px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.form::-webkit-scrollbar {
+  display: none;
+}
+
+.promoform {
+  height: 300px;
+  align-items: center;
+  border: 0.5px solid #cacaca;
+  border-radius: 20px;
+  margin: 0 0 2% 0;
+  overflow: scroll;
+}
+
+.promoform::-webkit-scrollbar {
+  display: none;
+}
+
+.insidepromoform {
+  width: 100%;
+  /* background: grey; */
+  height: 300px;
+  align-items: center;
+
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.promotext {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #9b9b9b;
+}
+
+.promotitle {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #e52c32;
+  line-height: 33px;
+  margin-top: 8%;
+}
+
+.promodate {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #e52c32;
+  padding-left: 2%;
+  white-space: nowrap;
+}
+
+.promoinfo {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  width: 98%;
+  padding-right: 1%;
+  height: 90px;
+  color: #424242;
+  margin-top: 1%;
+  overflow-wrap: break-word;
+  overflow: scroll;
+  text-align: justify;
+  margin-bottom: 3%;
+  overflow-x: hidden;
+}
+/* .promoinfo::-webkit-scrollbar {
+  display: none;
+} */
+.promotext {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #9b9b9b;
+}
+
+.promotext2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #9b9b9b;
+  margin-top: 2%;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  height: 220px;
+  margin: 0 2% 0 2%;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  width: 100%;
+  /* margin: 0 2% 0 2%; */
+  justify-content: center;
+  align-content: center;
+}
+
+.promopreview {
+  background-color: #f8fafb;
+  /* width: 690px; */
+  height: 200px;
+  border-radius: 30px;
+  margin: 0 5% 0 0;
+  outline: none;
+  border: 0px solid #fff;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+.bannerimage {
+  width: 690px;
+  height: 200px;
+  /* object-fit: cover; */
+}
+
+img[src=""],
+img:not([src]) {
+  opacity: 0;
+}
+
+img[src="*"] {
+  opacity: 1;
+}
+
+input[class~="promodetailinputfile"] {
+  word-wrap: break-word;
+  word-break: break-all;
+  width: 694px;
+}
+
+.promobutton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 5%;
+  box-sizing: border-box;
+}
+
+.buttonpromoedit {
+  width: 200px;
+  height: 41px;
+  border-radius: 30px;
+  border: 0px solid;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.buttontext {
+  margin-left: 2%;
+  width: 100px;
+  white-space: nowrap;
+}
+
+.buttonremove {
+  background-color: transparent;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  border: 0px;
+  margin-left: 5%;
+  margin-bottom: 10px;
+}
+
+.addpromobutton {
+  display: flex;
+  justify-content: flex-end;
+  white-space: nowrap;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.buttonadd {
+  right: 0;
+  width: 190px;
+  height: 41px;
+  border-radius: 100px;
+  border: 0px solid;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.promomodalbox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 780px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 0px;
+  border-radius: 20px;
+  background-color: #fff;
+  overflow: scroll;
+  padding: 0 2% 0 2%;
+  overflow-x: hidden;
+}
+
+.innerbox {
+  padding: 5% 5% 0 5%;
+  height: 700px;
+  width: 100%;
+}
+
+@media (max-height:600px){
+  .innerbox {
+    padding: 5% 5% 0 5%;
+    height: 550px;
+  }
+}
+
+@media (max-height:470px){
+  .innerbox {
+    padding: 5% 5% 0 5%;
+    height: 400px;
+  }
+}
+
+.promoinputlabel {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #c4c4c4;
+  line-height: 22px;
+  margin-bottom: 1%;
+  display: flex;
+  align-items: center;
+}
+
+.periodeinputlabel {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #c4c4c4;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  margin-right: 2%;
+}
+
+.promotextinputfile {
+  width: 420px;
+  height: 35px;
+  outline: none;
+  border: 0px;
+  border-radius: 10px;
+  background-color: #f8fafb;
+  margin-bottom: 2%;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  padding-left: 3%;
+  box-sizing: border-box;
+  color: #424242;
+}
+
+.promodetailinputfile {
+  /* width: 694px; */
+  width: 100%;
+  height: 129px;
+  outline: none;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  border: 0px;
+  border-radius: 10px;
+  background-color: #f8fafb;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  line-height: 25px;
+  font-size: 16px;
+  color: #424242;
+  resize: none;
+}
+
+.promodetailinputfile::-webkit-scrollbar {
+  display: none;
+}
+
+.promoperiodecontainer {
+  width: 420px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2%;
+}
+
+.promoinputimage {
+  display: flex;
+  flex-direction: column;
+}
+
+.promobannerimage {
+  width: 100%;
+  height: 205px;
+  border-radius: 20px;
+  border: 0px solid #fff;
+  box-shadow: 0px;
+  outline: none;
+  background-color: #f8fafb;
+}
+
+.promobannerbuttoncontainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -4%;
+}
+
+.promoimagebutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 35px;
+  width: 35px;
+  position: relative;
+  background-color: #e52c32;
+  border-radius: 100px;
+}
+.promoinput {
+  width: 14px;
+  height: 16px;
+  color: #fff;
+}
+
+input[class~="promoinputfile"]::file-selector-button {
+  background-color: #e52c32;
+  border-radius: 30px;
+  background-color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #424242;
+  position: absolute;
+  top: 0px;
+  right: -5px;
+  width: 100%;
+  height: 35px;
+  opacity: 0;
+  visibility: show;
+}
+
+input[class~="promoinputfile"] {
+  background-color: transparent;
+  border-radius: 30px;
+  color: transparent;
+  width: 0px;
+  margin: 0 0 5% 0;
+}
+
+.promomodalbutton {
+  justify-content: flex-end;
+  align-items: flex-end;
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.containertypebannertab{
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.buttontypebanner{
+  margin-top: 2%;
+  margin-right: 1%;
+  padding: 13px 28px 13px 28px;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid #ff4b74;
+  color: #ff4b74;
+  font-size: 18px;
+  font-family: "Nunito Sans";
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.buttontypebanner:focus{
+  margin-top: 2%;
+  margin-right: 1%;
+  padding: 13px 28px 13px 28px;
+  background-color: #ff4b74;
+  border-radius: 6px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 18px;
+  font-family: "Nunito Sans";
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.progressbar{
+  background: #fff !important;
+}
+
+.removecatpromomodalbox{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 482px;
+  height: 229px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  border: none;
+  border-radius: 20px;
+  background-color: #fffaf4;
+}
+
+@media (max-width:900px){
+  .insidepromoform {
+    width: 100%;
+    /* background: grey; */
+    height: 100%;
+    align-items: center;
+  
+    border-radius: 20px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .promoform{
+    overflow-x: hidden;
+    padding: 0 2% 0 2%;
+  }
+
+  .promoform::-webkit-scrollbar {
+    display: block;
+  }
+
+  .left-column {
+    margin: 2% 2% 0 2%;
+    align-self: center;
+    width: 100%;
+  }
+
+  .promopreview{
+    width: 100%;
+  }
+
+  .bannerimage{
+    width: 100%;
+  }
+  
+}
+
+@media (max-width:600px){
+  .promomodalbox{
+    width: 600px;
+  }
+
+  .removecatpromomodalbox{
+   zoom: 80%;
+  }
+}
+
+@media (max-width:500px){
+  .promomodalbox{
+    width: 460px;
+  }
+
+  .removecatpromomodalbox{
+    zoom: 70%;
+   }
+}

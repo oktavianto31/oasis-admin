@@ -1,0 +1,125 @@
+.ticket {
+  z-index: 999;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: -40px;
+  font-size: 12px;
+  /* background:red; */
+}
+
+.informationwrapper {
+  text-align: center;
+  width: 180px;
+  border-bottom: 1px solid black;
+}
+
+.receiptinformation {
+  margin-top: 10px;
+  /* background: #000; */
+  width: 170px;
+  font-size: 10px;
+}
+
+td,
+th,
+tr,
+table {
+  border-top: 1px solid black;
+  border-collapse: collapse;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+td.description,
+th.description {
+  font-size: 10px;
+  width: 75px;
+  max-width: 75px;
+  /* background: red; */
+  /* text-align: center; */
+}
+
+th.center {
+  text-align: center;
+}
+
+.descriptioncenter {
+  text-align: center;
+  font-size: 10px;
+  width: 75px;
+  max-width: 75px;
+}
+
+td.quantity,
+th.quantity {
+  font-size: 10px;
+  width: 14px;
+  max-width: 40px;
+  word-break: break-all;
+  text-align: center;
+}
+
+td.price,
+th.price {
+  font-size: 10px;
+  width: 70px;
+  max-width: 70px;
+  word-break: break-all;
+  text-align: right;
+}
+
+.centered {
+  text-align: center;
+  align-content: center;
+}
+
+.tablereceipt {
+  width: 180px;
+}
+
+img {
+  max-width: inherit;
+  width: inherit;
+}
+
+.totalwrapper {
+  border-bottom: 2px solid transparent;
+}
+
+@media print {
+  .hidden-print,
+  .hidden-print * {
+    display: none !important;
+  }
+
+  /* .ticket{
+        display: block !important;
+    } */
+
+  * {
+    visibility: hidden;
+  }
+
+  .ticket, .ticket *{
+    visibility: visible;
+  }
+
+  /* .ticket{
+    position: absolute;
+  } */
+
+  /* body *:not(.ticket):not(.ticket *){
+        visibility: hidden !important;
+    }
+    .ticket{
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+    } */
+}

@@ -1,0 +1,1049 @@
+.container {
+  width:100%;
+  background-color: #fffaf4;
+  height: 100%;
+  zoom: 70%;
+  /* overflow: scroll; */
+}
+
+/* .container::-webkit-scrollbar {
+  display: none;
+} */
+
+.dashboardsection {
+  display: grid;
+  grid-template-areas: "1fr 1fr";
+  grid-gap: 40px;
+  margin-top: 2%;
+  margin-left: 4%;
+  margin-right: 4%;
+  padding-bottom: 5%;
+  align-items: flex-start;
+  overflow: scroll;
+}
+
+@media (max-width:1000px){
+
+  html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .dashboardsection{
+    display: grid;
+    grid-template-areas: "1fr";
+    grid-gap: 40px;
+    margin-top: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding-bottom: 5%;
+    align-items: flex-start;
+    overflow: scroll;
+  }
+}
+
+.dashboardsection::-webkit-scrollbar {
+  display: none;
+}
+
+.tables {
+  width: 570px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #424242;
+}
+
+.tablecol {
+  display: flex;
+  flex-direction: row;
+  margin: 3% 0 0 0;
+
+}
+
+@media (max-width:500px){
+
+  .tablecol {
+    display: flex;
+    flex-direction: row;
+    margin: 3% 0 0 0;
+    flex-wrap: wrap;
+  }
+}
+
+.heading {
+  display: flex;
+  align-items: flex-start;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #424242;
+  margin-bottom: 3%;
+}
+
+.tablecolumn1 {
+  margin: 3% 2% 0 4%;
+}
+
+.scrollable {
+  display: flex;
+  height: auto;
+  align-items: flex-end;
+}
+
+.dashboardtablecontainer {
+
+  background-color: #fff;
+  width: 345px;
+  height: 140px;
+  border-radius: 5px;
+  overflow-y: scroll;
+}
+
+.dashboardtablecontainer::-webkit-scrollbar {
+  display: none;
+}
+
+.tablegrid {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.tablenumber {
+  margin: 5% 5% 5% 5%;
+  width: 57px;
+  height: 57px;
+  border-radius: 5px;
+  background-color: #e3e2ff;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 41px;
+  color: #7a79a0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.tablecolumn2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 2% 0 0 0;
+}
+
+.tablerow {
+  flex-direction: row;
+  display: flex;
+  max-width: 170px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 5%;
+}
+
+@media (max-width:500px){
+
+  .tablecolumn2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+ 
+    width: 100%;
+    margin: 2% 0 0 4%;
+  }
+
+  .tablerow {
+    flex-direction: row;
+    display: flex;
+    max-width: 170px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    /* margin-top: 5%; */
+    margin-top: 0%;
+    padding: 2%;
+    margin-right: 3%;
+  }
+}
+
+.number {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 98px;
+  color: #ff7377;
+  padding: 0% 5% 0% 5%;
+}
+
+.number2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 98px;
+  color: #555570ce;
+  padding: 0% 5% 0% 5%;
+}
+.tablerowtext {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  padding: 0% 7% 0% 0%;
+  white-space: nowrap;
+}
+
+.inventory {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #424242;
+}
+
+.dashboardinventorycol {
+  display: flex;
+  flex-direction: row;
+}
+
+.ordermodalitemsdashboard{
+  zoom: 80%;
+}
+
+@media (min-width:840px){
+
+  html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .ordermodalitemsdashboard{
+    display: flex;
+  flex-direction: row;
+  zoom: 100%;
+  }
+
+  
+}
+
+.ordermodalformdashboard{
+  display: flex;
+  flex: 1;
+}
+
+.ordermenuitemcontainerdashboard{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+@media (max-width:500px){
+
+  .dashboardinventorycol {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.invcolumn1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 177px;
+  margin: 4% 3% 0 4%;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.invcolumn2 {
+  display: flex;
+  flex-direction: column;
+  height: 177px;
+  margin-top: 4%;
+}
+.buttoncontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  background-color: transparent;
+  border: 1px solid #1dab33;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1dab33;
+  border-radius: 6px;
+  width: 134px;
+  height: 48px;
+}
+
+.headerrow {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr;
+  margin-bottom: 3%;
+}
+
+.text1 {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+}
+.text3 {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width:500px){
+
+  .text1 {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text2 {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+  }
+
+  .text3 {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+
+  }
+}
+
+.list {
+  height: 150px;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 370px;
+  overflow-y: scroll;
+}
+
+.list::-webkit-scrollbar {
+  display: none;
+}
+
+.inventorylistgrid {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr;
+  margin-top: 3%;
+}
+
+.inventoryindex {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #555570;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inventoryname {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #555570;
+  display: flex;
+  align-items: center;
+}
+
+.inventorystock {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #555570;
+  display: flex;
+  align-items: center;
+}
+
+.orderscreen {
+
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #424242;
+  
+}
+
+@media (max-width:1000px) {
+
+
+  .orderscreen {
+    width: 100%;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #424242;
+  }
+}
+
+.dashboardordergrid {
+  width: 100%;
+  display: grid;
+  grid-template-areas: "a a";
+  align-items: flex-start;
+  grid-gap: 20px;
+  padding: 4% 4%;
+}
+
+@media (max-width:1000px) {
+  
+  .dashboardordergrid {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "a a a";
+    align-items: flex-start;
+    grid-gap: 20px;
+    padding: 4% 4%;
+  }
+  
+}
+
+@media (max-width:800px) {
+
+
+  .dashboardordergrid {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "a a";
+    align-items: flex-start;
+    grid-gap: 20px;
+    padding: 4% 4%;
+  }
+}
+
+
+.dashboardordercontainer {
+  border: 3px solid #ff9598;
+  border-radius: 19px;
+  width: 98%;
+  height: 400px;
+  margin-top: 2%;
+  overflow: scroll;
+}
+
+@media (max-width:500px){
+
+  .dashboardordergrid {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "a";
+    align-items: flex-start;
+    grid-gap: 20px;
+    padding: 4% 4%;
+  }
+
+  .dashboardordercontainer{
+    border: 3px solid #ff9598;
+    border-radius: 19px;
+    /* width: 50%; */
+    height: 400px;
+    margin-top: 2%;
+    overflow: scroll;
+  }
+}
+
+.dashboardordercontainer::-webkit-scrollbar {
+  display: none;
+}
+
+.orderdetails {
+  background-color: #fff;
+  border: 0.5px solid #9b9b9b;
+  border-radius: 11px;
+  width: 80%;
+  padding: 1%;
+  /* height: 141px; */
+}
+
+.orderID {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+  color: #424242;
+  margin: 6% 0 2% 8%;
+}
+
+.orderdetail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 0 5% 8%;
+}
+
+.orderdetailtime {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #979797;
+}
+
+.tableID {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #df3030;
+}
+
+.orderbuttoncontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+
+}
+
+.orderbutton {
+  background-color: transparent;
+  border: 1px solid #1dab33;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #1dab33;
+  border-radius: 5px;
+  width: 210px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.promo {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #424242;
+}
+
+.dashboardpromocontainer {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  overflow: scroll;
+}
+
+.dashboardpromocontainer::-webkit-scrollbar {
+  display: none;
+}
+
+.promodetails {
+  height: 153px;
+  margin-bottom: 2%;
+}
+.promodetailbutton {
+  outline: none;
+  background: none;
+  box-shadow: none;
+  border: none;
+  width: 100%;
+  height: 150px;
+}
+
+@media (max-width:1000px){
+  .promodetailbutton {
+    outline: none;
+    background: none;
+    box-shadow: none;
+    border: none;
+    width: 100%;
+    height: 200px;
+  }
+
+  .promodetails {
+    height: 153px;
+    margin-bottom: 5%;
+  }
+
+  .dashboardpromocontainer {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: scroll;
+  }
+}
+
+@media (max-width:800px){
+  .promodetails{
+    margin-bottom: 8%;
+  }
+}
+
+.picture {
+  width: 100%;
+  height: 100%;
+  border-radius: 28px;
+  object-fit: cover;
+}
+
+@media (max-width:450px){
+
+  html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .promodetailbutton {
+    outline: none;
+    background: none;
+    box-shadow: none;
+    border: none;
+  
+    height: 150px;
+  }
+
+  .promodetails {
+    height: 153px;
+    margin-bottom: 2%;
+  }
+}
+
+@media (max-width:350px){
+
+  html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .promodetailbutton {
+    outline: none;
+    background: none;
+    box-shadow: none;
+    border: none;
+
+    height: 150px;
+  }
+}
+
+.switchbuttoncontainer {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.textswitchbutton{
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 33px;
+  color: #424242;
+}
+
+.sizedbox{
+  width: 50px;
+}
+
+.notification {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  position: absolute;
+  z-index: 3;
+  top: -50px;
+  right: 0px;
+  width: 227px;
+  height: 49px;
+  background-color: #e52c32;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 15px;
+}
+.hidden {
+  display: none;
+}
+.notificationtextcontainer {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  margin-left: 8%;
+}
+.notificationtext {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #fff;
+}
+.notificationclose {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+}
+.notifclosebutton {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  box-shadow: none;
+  color: #fff;
+  font-size: 8px;
+  padding: 0;
+}
+
+.progressbar{
+  background: #fff !important;
+}
+
+.ordertimedashboard {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #4c4c4c;
+}
+
+.orderdatedashboard {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #f10c0c;
+}
+
+.ordermodalboxdashboard {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 550px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  /* display: flex;
+  flex-direction: column; */
+  border: none;
+  border-radius: 20px;
+  background-color: #fffaf4;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.ordermodalstatusdashboard {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  width: auto;
+}
+
+.statustextdashboard{
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #555570;
+  margin-right: 5%;
+}
+
+.statuscoloredtextdashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5%;
+}
+
+@media (max-width:840px){
+  .ordermodalboxdashboard {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 550px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    /* display: flex;
+    flex-direction: column; */
+    border: none;
+    border-radius: 20px;
+  }
+
+  /* .ordermodalitems{
+    display: grid;
+    grid-template-columns: 1fr;
+    flex: 1;
+  } */
+
+}
+
+
+
+@media (max-width: 1000px){
+  .tables{
+    width: 100%;
+  }
+  .dashboardtablecontainer{
+    width: 100%;
+    height: 200px;
+
+  }
+
+  .tablegrid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  
+}
+
+@media (max-width:700px){
+  .invcolumn1{
+    width: 100%;
+    flex-direction: row;
+  }
+  .invcolumn2{
+    width: 100%;
+    margin: 4% 3% 0 4%;
+  }
+
+  .list{
+    width: 100%;
+  }
+}
+
+@media (max-width:500px){
+  .leftdetail{
+    flex: 1;
+  }
+
+  .rightdetail{
+    flex: 1;
+  }
+  .orderdetails{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .orderbuttoncontainer{
+    margin-bottom: 0%;
+  }
+
+  .invcolumn2{
+    width: 100%;
+    margin: 4% 3% 0 4%;
+  }
+}
+
+@media (max-width:840px){
+  .ordertimedashboard{
+    font-size: 12px;
+  }
+
+  .orderdatedashboard{
+    font-size: 12px;
+  }
+
+  .statustextdashboard{
+    font-size: 12px;
+  }
+
+  .statuscoloredtextdashboard{
+    font-size: 12px;
+  }
+}
+
+@media (max-width:480px){
+  .ordermodalboxdashboard {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 550px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    /* display: flex;
+    flex-direction: column; */
+    border: none;
+    border-radius: 20px;
+    
+  }
+
+  .ordertimedashboard{
+    font-size: 10px;
+  }
+
+  .orderdatedashboard{
+    font-size: 10px;
+  }
+
+  .statustextdashboard{
+    font-size: 10px;
+  }
+
+  .statuscoloredtextdashboard{
+    font-size: 100px;
+  }
+}
+
+@media only screen and (max-width:500px){
+
+  html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .invcolumn1{
+    width: 95%;
+    flex-direction: row;
+  }
+
+  .dashboardsection{
+    display: grid;
+    grid-template-areas: "1fr";
+    grid-gap: 40px;
+    margin-top: 2%;
+    margin-left: 4;
+    margin-right: 4;
+    padding-bottom: 5%;
+    align-items: flex-start;
+    overflow: scroll;
+  }
+
+  .invcolumn2{
+    width: 95%;
+    margin: 4% 3% 0 4%;
+  }
+}
+
+@media only screen and (max-width:350px){
+
+  html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .invcolumn1{
+    width: 95%;
+    flex-direction: row;
+  }
+
+  .dashboardsection{
+    display: grid;
+    grid-template-areas: "1fr";
+    grid-gap: 40px;
+    margin-top: 2%;
+    margin-left: 4;
+    margin-right: 4;
+    padding-bottom: 5%;
+    align-items: flex-start;
+    overflow: scroll;
+  }
+
+  .invcolumn2{
+    width: 95%;
+    margin: 4% 3% 0 4%;
+  }
+
+}
+
+.ordermodalinputfiletextarea{
+  resize: none;
+    width: 270px; 
+  display: flex;
+  overflow: scroll;
+  min-height: 35px;
+  margin-top: 1%;
+  margin-bottom: 4%;
+  background-color: #fff;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding: 5%;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  color: #424242;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}

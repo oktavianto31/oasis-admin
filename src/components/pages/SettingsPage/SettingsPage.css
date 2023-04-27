@@ -1,0 +1,800 @@
+.settingsoutercontainer {
+  margin-top: 4%;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-bottom: 4%;
+  position: relative;
+}
+
+.settingscontainer {
+  display: grid;
+  height: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 5%;
+  background-color: #fffaf4;
+  margin-top: 6%;
+  margin-left: 4%;
+  margin-right: 4%;
+  overflow: scroll;
+}
+
+.settingscontainer::-webkit-scrollbar {
+  display: none;
+}
+
+.settingsnotification {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  position: absolute;
+  z-index: 5;
+  top: -30px;
+  right: 0px;
+  width: 227px;
+  height: 49px;
+  background-color: #e52c32;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 15px;
+}
+
+.settingsheader {
+  display: flex;
+  flex-direction: column;
+}
+
+.headertext {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 29px;
+  line-height: 40px;
+  color: #424242;
+  margin-bottom: 3%;
+}
+
+.settingscontent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.settingsinsidegrid {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+}
+
+.taxandservicecontainer {
+  margin-bottom: 10%;
+}
+
+.profilesettings {
+  width: 570px;
+  background-color: #fff;
+  padding: 2%;
+  border-radius: 15px;
+}
+
+.profilecontainer {
+  display: grid;
+  grid-template-columns: 0.2fr 0.8fr 1fr;
+  align-items: center;
+  margin: 2%;
+}
+
+.profilelogo {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  border: 0px solid;
+}
+
+.profilename {
+  display: flex;
+  flex-direction: column;
+  margin-left: 4%;
+}
+
+.restaurantname {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #424242;
+}
+.profilecolor {
+  display: flex;
+  flex-direction: row;
+  margin-top: 4%;
+  margin-left: 2%;
+}
+
+.profilecolortext {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #424242;
+}
+
+.profilecolorimg {
+  width: 15px;
+  height: 15px;
+  border-radius: 5px;
+  margin-left: 2%;
+  background-color: #df3030;
+}
+
+.editprofile {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.editprofilebutton {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  width: 130px;
+  height: 40px;
+  white-space: nowrap;
+  border-radius: 5px;
+}
+
+.profilecontainer2 {
+  width: auto;
+  height: auto;
+  margin: 2%;
+  padding: 2% 2% 5% 2%;
+  background-color: #f8fafb;
+  border-radius: 15px;
+}
+
+.profileaddressheader {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2% 2% 2% 2%;
+}
+
+.profiletitle {
+  display: flex;
+  justify-content: flex-start;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #c4c4c4;
+}
+.editcontainer {
+  display: flex;
+  justify-content: flex-end;
+}
+.editbuttoncontainer {
+  width: 70px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  border-radius: 5px;
+}
+.editbuttoncontaineractive {
+  width: 70px;
+  height: 30px;
+  border: 0px solid;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #fff;
+  border-radius: 5px;
+}
+.profileaddress {
+  display: grid;
+  margin: -2% 0 4% 2%;
+  grid-template-columns: 2fr 0.5fr;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #424242;
+
+  width: 400px;
+  height: 57px;
+  border: 0px solid;
+  resize: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.profileaddress::-webkit-scrollbar {
+  display: none;
+}
+.profileaddressactive {
+  display: grid;
+  margin: -2% 0 4% 2%;
+  grid-template-columns: 2fr 0.5fr;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #424242;
+  width: 400px;
+  height: 57px;
+  border-radius: 10px;
+  border: 1px solid #424242;
+  resize: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.profileaddressactive::-webkit-scrollbar {
+  display: none;
+}
+.profilelocation {
+  display: grid;
+  margin: -2% 0 4% 2%;
+  grid-template-columns: 2fr 0.5fr;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #424242;
+  width: 400px;
+  height: 20px;
+  border: 0px solid;
+  resize: none;
+  outline: none;
+  background-color: transparent;
+}
+.profilelocation::-webkit-scrollbar {
+  display: none;
+}
+
+.profilelocationactive {
+  display: grid;
+  margin: -2% 0 4% 2%;
+  grid-template-columns: 2fr 0.5fr;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #424242;
+  width: 400px;
+  height: 20px;
+  resize: none;
+  outline: none;
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1px solid #424242;
+}
+.profilelocationactive::-webkit-scrollbar {
+  display: none;
+}
+
+.profileopenheader {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2%;
+}
+.profileopen {
+  display: flex;
+  flex-direction: column;
+  margin: -1% 0 4% 2%;
+}
+.opentext {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.openleft {
+  width: 200px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #424242;
+  margin-bottom: 2%;
+}
+.openright {
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #424242;
+  margin-bottom: 2%;
+}
+
+.taxsettings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 570px;
+  height: 160px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.taxcontents {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2%;
+  padding: 0 3%;
+}
+
+.taxtext {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #424242;
+}
+.taxdetails {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  justify-items: flex-end;
+}
+.percentagetext {
+  width: 85px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 10px;
+}
+.taxedit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.taxeditbutton {
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #df3030;
+}
+.helpbox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 650px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 0px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+.helpinnermodalbox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+input[class~="messageinput"] {
+  word-wrap: break-word;
+  word-break: break-all;
+  width: 694px;
+}
+
+.messageinput {
+  width: 100%;
+  height: 100px;
+  outline: none;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  border: 0px;
+  border-radius: 10px;
+  background-color: #f8fafb;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  line-height: 25px;
+  font-size: 16px;
+  color: #424242;
+  resize: none;
+}
+
+.messageinput::-webkit-scrollbar {
+  display: none;
+}
+.editprofilebox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 698px;
+  height: 343px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 0px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.editprofileinnerbox {
+  display: flex;
+  width: 90%;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 5% 0 5%;
+  position: absolute;
+  z-index: -2;
+}
+.editprofilemodaltitle {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 41px;
+  color: #424242;
+  text-align: left;
+}
+
+.editprofileinnermodalbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #fff;
+}
+
+.editprofileleftmodalcolumn {
+  width: 100%;
+}
+.inputtext {
+  margin-bottom: 2%;
+}
+
+.profileinputtext {
+  margin-top: 2%;
+}
+.editprofileinputlabel {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #c4c4c4;
+}
+
+.editprofileinputfile {
+  width: 418px;
+  height: 37px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background-color: #f8fafb;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #424242;
+  box-sizing: border-box;
+  padding-left: 15px;
+  margin-bottom: 1%;
+  resize: none;
+}
+
+.editprofileinputimage {
+  padding-left: 20%;
+}
+
+.editprofilemodalbutton {
+  position: relative;
+  z-index: -2;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5%;
+}
+
+.editprofileimagecontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.editprofileimage {
+  width: 118px;
+  height: 118px;
+  border-radius: 200px;
+  background-color: #f8fafb;
+}
+
+.editprofileimagebuttoncontainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -10%;
+  margin-left: -15%;
+}
+.editprofileimagebutton {
+  height: 35px;
+  width: 35px;
+}
+
+.helpsettings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 570px;
+  height: 160px;
+  border-radius: 15px;
+  padding: 3% 0%;
+  background-color: #fff;
+}
+
+.helpcontents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.helptext {
+  width: 90%;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #424242;
+}
+.helpbuttoncontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 2%;
+}
+
+.helpbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 102px;
+  height: 35px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  border-radius: 6px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  margin-bottom: 3%;
+}
+
+.helpbutton2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 87px;
+  height: 35px;
+  background-color: #df3030;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  border-radius: 6px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.helpicons {
+  width: 17px;
+  height: 17px;
+  margin-right: 5%;
+}
+
+.openhourbox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 531px;
+  height: 349px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 0px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.openhourinnerbox {
+  display: flex;
+  width: 85%;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  z-index: -2;
+}
+.openhourmodaltitle {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 41px;
+  color: #424242;
+  text-align: center;
+}
+
+.openhourinnermodalbox {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.days {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.daysbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e52c32;
+  background-color: #ffe4e5;
+  outline: none;
+  box-shadow: none;
+  width: 51px;
+  height: 51px;
+  border-radius: 50px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #e52c32;
+}
+
+.daysbuttonoff {
+  border: 1px solid #c4c4c4;
+  background-color: transparent;
+  outline: none;
+  box-shadow: none;
+  width: 51px;
+  height: 51px;
+  border-radius: 50px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #c4c4c4;
+}
+
+.checkbox {
+  display: flex;
+  height: 30px;
+  margin-top: 1%;
+}
+.time {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 1%;
+  margin-top: 2%;
+}
+
+.opentime {
+  display: flex;
+  flex-direction: column;
+  padding-right: 5%;
+}
+.timelabelactive {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000;
+}
+.timelabel {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #c4c4c4;
+}
+
+.timeinputcontainer {
+  display: flex;
+  justify-content: space-between;
+  width: 190px;
+}
+
+.timeinputs {
+  display: flex;
+  align-items: center;
+}
+input[class~="timeinputtext"] {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #c4c4c4;
+  background-color: transparent;
+  width: 100px;
+}
+
+input[class~="percentageinput"] {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 15px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #fff;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.openhourmodalbutton {
+  position: relative;
+  z-index: -2;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5%;
+}
+
+.MuiMenu-list::-webkit-scrollbar {
+  display: none;
+}
+
+.semicolon {
+  margin: 0 10% 0 10%;
+  color: #c4c4c4;
+}
+
+.semicolonactive {
+  margin: 0 10% 0 10%;
+  color: #000;
+}
+
+.edithouricon {
+  width: 16px;
+  height: 13px;
+  color: #e52c32;
+  margin-left: 2%;
+}
+.hidden {
+  display: none;
+}
+
+.progressbar{
+  background: #fff !important;
+}
+
+.tenantidsetting{
+   font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #424242;
+    margin-left: 3%;
+}
